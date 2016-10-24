@@ -82,7 +82,7 @@ Example using the SerializerBuilder::
     use JMS\Serializer\SerializationContext;
 
     $serializer = JMS\Serializer\SerializerBuilder::create()
-        ->setDefaultSerializationContextFactory(function () {
+        ->setSerializationContextFactory(function () {
             return SerializationContext::create()
                 ->setSerializeNull(true)
             ;
